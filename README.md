@@ -1,2 +1,2 @@
 # ConfigFiles
-.bashrc file 
+Configuration files for VIM and Bash terminal.
