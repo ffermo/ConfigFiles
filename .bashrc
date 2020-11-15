@@ -9,9 +9,9 @@ alias l='ls -CF'
 alias ls='ls -hN --color=auto --group-directories-first'
 
 # Personal functions.
-open() {
-    xdg-open "$1" &>/home/francis/nohup.out
-}
+#open() {
+#    xdg-open "$1" &>/home/francis/nohup.out
+#}
 
 shopt -s autocd # cd into directory by typing directory name.
 
@@ -100,7 +100,21 @@ if ! shopt -oq posix; then
 fi
 
 
-# Source the ROS setup file for the EZRASSOR, if it exists.
-if [ -f "/home/francis/ezrassor_ws/devel/setup.bash" ]; then
-  . "/home/francis/ezrassor_ws/devel/setup.bash"
+
+# WSL Specific
+if grep -q icrosoft /proc/version; then
+	export EXECIGNORE=\*.dll
+	export PS1="\[\e[31m\]\u\[\e[m\]:\w\\$ "
+	export LS_COLORS="di=1;31:ex=1;37:tw=30;41:ow=1;37;41"
+	export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
+
+	source /opt/ros/melodic/setup.bash
+
+	# Source the ROS setup file for the EZRASSOR.
+	source "/home/francis/ezrassor_ws/devel/setup.bash"
+	
+	# WSL aliases for quick nav.
+	alias UCF='cd /mnt/f/Documents/UCF'
+	alias ff='cd /mnt/f/'
+	alias open='cmd.exe /C start'
 fi
