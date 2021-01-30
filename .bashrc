@@ -7,6 +7,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls -hN --color=auto --group-directories-first'
+alias lx='ls -lX'
 
 # Personal functions.
 #open() {
