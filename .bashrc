@@ -3,7 +3,7 @@
 # Personal aliases.
 alias py='python3'
 alias run='./a.out'
-alias ll='ls -alF'
+alias ll='ls -alFX'
 alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls -hN --color=auto --group-directories-first'
