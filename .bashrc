@@ -3,20 +3,21 @@
 # Personal aliases.
 alias py='python3'
 alias run='./a.out'
-alias ll='ls -alFX'
+alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls -hN --color=auto --group-directories-first'
+alias xtmux='export DISPLAY="`tmux show-env | sed -n 's/^DISPLAY=//p'`"'
 
-# Personal functions.
-#open() {
-#    xdg-open "$1" &>/home/francis/nohup.out
-#}
 
-shopt -s autocd # cd into directory by typing directory name.
+# Function to open file with default application using 'open'.
+# Comment out if using WSL.
+open() {
+    xdg-open "$1" &>/home/francis/nohup.out
+}
 
-# alias SwitchHitter= 'wine /mnt/4E8E6AC78E6AA765/Users/Francis/AppData/Roaming/EliteKeyboards/Switch\ Hitter.exe'
-# alias Ezthumb= 'wine /mnt/4E8E6AC78E6AA765/Program\ Files\ \(x86\)/Ezthumb/EzthumbWin.exe'
+# cd into directory by typing directory name.
+shopt -s autocd
 
 # Color support for ls and grep 
 if [ -x /usr/bin/dircolors ]; then
@@ -86,6 +87,9 @@ xterm*|rxvt*)
     ;;
 esac
 
+# Updates TMUX display variable.
+# export DISPLAY="`tmux show-env | sed -n 's/^DISPLAY=//p'`"
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -99,7 +103,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
+# Source ROS environment variables at launch.
+source /opt/ros/melodic/setup.bash
 
 # WSL Specific
 if grep -q icrosoft /proc/version; then
@@ -117,4 +122,9 @@ if grep -q icrosoft /proc/version; then
 	alias UCF='cd /mnt/f/Documents/UCF'
 	alias ff='cd /mnt/f/'
 	alias open='cmd.exe /C start'
+fi
+
+# Source the ROS setup file for the EZRASSOR, if it exists.
+if [ -f "/home/francis/ezrassor_ws/devel/setup.bash" ]; then
+  . "/home/francis/ezrassor_ws/devel/setup.bash"
 fi
