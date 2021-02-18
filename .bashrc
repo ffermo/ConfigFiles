@@ -117,4 +117,8 @@ if grep -q icrosoft /proc/version; then
 	alias UCF='cd /mnt/f/Documents/UCF'
 	alias ff='cd /mnt/f/'
 	alias open='cmd.exe /C start'
+else
+	open() {
+		xdg-open "$1" &>/home/francis/nohup.out
+	}
 fi
