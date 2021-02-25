@@ -1,7 +1,7 @@
 # Configuration for Bash Shell
 
 # Personal aliases.
-alias py='python3'
+alias py='python'
 alias run='./a.out'
 alias la='ls -A'
 alias l='ls -CF'
@@ -100,7 +100,7 @@ if [ -d "/opt/ros/melodic/" ]; then
 	source /opt/ros/melodic/setup.bash
 fi
 
-# WSL Specific
+# Checks to see if in Windows environment (WSL).
 if grep -q icrosoft /proc/version; then
 	export EXECIGNORE=\*.dll
 	export PS1="\[\e[31m\]\u\[\e[m\]:\w\\$ "
@@ -116,10 +116,14 @@ if grep -q icrosoft /proc/version; then
 	alias UCF='cd /mnt/f/Documents/UCF'
 	alias ff='cd /mnt/f/'
 	alias open='cmd.exe /C start'
+
+# Otherwise, we SHOULD be in Linux environment.
 else
 	open() {
 		xdg-open "$1" &>/home/francis/nohup.out
 	}
+	
+	alias UCF='cd /home/francis/Francis/Documents/UCF'
 fi
 
 # Source the ROS setup file for the EZRASSOR, if it exists.
