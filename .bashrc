@@ -1,20 +1,12 @@
 # Configuration for Bash Shell
 
 # Personal aliases.
-alias py='python3'
+alias py='python'
 alias run='./a.out'
-alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias ls='ls -hN --color=auto --group-directories-first'
+alias ll='ls -ahlN --time=ctime --color=auto --group-directories-first'
 alias xtmux='export DISPLAY="`tmux show-env | sed -n 's/^DISPLAY=//p'`"'
-
-
-# Function to open file with default application using 'open'.
-# Comment out if using WSL.
-open() {
-    xdg-open "$1" &>/home/francis/nohup.out
-}
 
 # cd into directory by typing directory name.
 shopt -s autocd
@@ -22,7 +14,7 @@ shopt -s autocd
 # Color support for ls and grep 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+	alias ls='ls -ahlN --color=always --group-directories-first'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -103,10 +95,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Source ROS environment variables at launch.
-source /opt/ros/melodic/setup.bash
+# Source ROS environment variables at launch if installed on system.
+if [ -d "/opt/ros/melodic/" ]; then
+	source /opt/ros/melodic/setup.bash
+fi
 
-# WSL Specific
+# Checks to see if in Windows environment (WSL).
 if grep -q icrosoft /proc/version; then
 	export EXECIGNORE=\*.dll
 	export PS1="\[\e[31m\]\u\[\e[m\]:\w\\$ "
@@ -122,10 +116,14 @@ if grep -q icrosoft /proc/version; then
 	alias UCF='cd /mnt/f/Documents/UCF'
 	alias ff='cd /mnt/f/'
 	alias open='cmd.exe /C start'
+
+# Otherwise, we SHOULD be in Linux environment.
 else
 	open() {
 		xdg-open "$1" &>/home/francis/nohup.out
 	}
+	
+	alias UCF='cd /home/francis/Francis/Documents/UCF'
 fi
 
 # Source the ROS setup file for the EZRASSOR, if it exists.
