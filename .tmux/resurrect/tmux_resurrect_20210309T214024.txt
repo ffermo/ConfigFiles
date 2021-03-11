@@ -1,0 +1,5 @@
+pane	1	0	:python	1	:*	0	:/home/francis/RASSOR_Arduino	1	bash	:
+pane	1	0	:python	1	:*	1	:/home/francis/Downloads	0	python	:/usr/bin/python /opt/ros/melodic/bin/roslaunch ezrassor_launcher configurable_communication.launch control_methods:=keyboard
+pane	1	0	:python	1	:*	2	:/home/francis	0	python	:python /opt/ros/melodic/lib/rosserial_python/serial_node.py /dev/ttyACM0
+window	1	0	1	:*	cac9,282x78,0,0{136x78,0,0,1,145x78,137,0[145x47,137,0,2,145x30,137,48,3]}
+state		

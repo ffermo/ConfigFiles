@@ -1,0 +1,6 @@
+pane	1	0	:bash	1	:*	0	:/home/francis/EZ-RASSOR	1	bash	:
+pane	1	0	:bash	1	:*	1	:/home/francis/EZ-RASSOR/packages/simulation/ezrassor_sim_gazebo	0	bash	:
+pane	1	0	:bash	1	:*	2	:/home/francis	0	bash	:
+pane	1	0	:bash	1	:*	3	:/home/francis/.vim/plugged/YouCompleteMe	0	bash	:
+window	1	0	1	:*	c77c,275x77,0,0{90x77,0,0,1,91x77,91,0,2,92x77,183,0[92x39,183,0,3,92x37,183,40,4]}
+state	1	

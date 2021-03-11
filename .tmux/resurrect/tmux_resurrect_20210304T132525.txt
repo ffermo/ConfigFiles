@@ -1,0 +1,5 @@
+pane	1	0	:python2	1	:*M	0	:/home/francis/RASSOR_Arduino	0	python	:/usr/bin/python /opt/ros/melodic/bin/roslaunch ezrassor_launcher configurable_simulation.launch control_methods:=autonomy keyboard robot_count:=1 spawn_x_coords:=0 spawn_y_coords:=0 digsite_x_coords:=5 digsite_y_coords:=5
+pane	1	0	:python2	1	:*M	1	:/home/francis/RASSOR_Arduino	0	python	:python /opt/ros/melodic/lib/rosserial_python/serial_node.py /dev/ttyACM0
+pane	1	0	:python2	1	:*M	2	:/home/francis	1	python2	:/usr/bin/python2 /opt/ros/melodic/bin/rostopic echo /ezrassor1/wheel_instructions
+window	1	0	1	:*M	2817,137x76,0,0[137x38,0,0,0,137x37,0,39{68x37,0,39,1,68x37,69,39,2}]
+state	1	

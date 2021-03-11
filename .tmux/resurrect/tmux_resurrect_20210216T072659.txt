@@ -1,0 +1,7 @@
+pane	1	0	:bash	1	:*	0	:/home/francis	0	bash	:
+pane	1	0	:bash	1	:*	1	:/home/francis	1	bash	:
+pane	1	0	:bash	1	:*	2	:/opt/ros/melodic/share/realsense2_camera/launch	0	sudo	:sudo vi rs_camera.launch
+pane	1	0	:bash	1	:*	3	:/home/francis/ezrassor_ws/build/ezrassor_autonomous_control	0	bash	:
+pane	1	0	:bash	1	:*	4	:/home/francis	0	bash	:
+window	1	0	1	:*	5068,282x78,0,0{146x78,0,0,1,135x78,147,0[135x18,147,0,2,135x18,147,19,3,135x18,147,38,4,135x21,147,57,5]}
+state	1	
