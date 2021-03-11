@@ -1,0 +1,6 @@
+pane	1	0	:vi	1	:*	0	:/home/francis/RASSOR_Arduino	1	vi	:vi ezrassor_twist_stepper.ino
+pane	1	0	:vi	1	:*	1	:/home/francis	0	bash	:
+pane	1	0	:vi	1	:*	2	:/home/francis/RASSOR_Arduino	0	bash	:
+pane	1	0	:vi	1	:*	3	:/home/francis/EZ-RASSOR/packages	0	bash	:
+window	1	0	1	:*	e75f,282x78,0,0{139x78,0,0,0,142x78,140,0[142x25,140,0,4,142x25,140,26,1,142x26,140,52,2]}
+state	1	

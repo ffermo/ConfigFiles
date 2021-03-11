@@ -1,0 +1,5 @@
+pane	1	0	:bash	1	:*	0	:/home/francis/EZ-RASSOR/packages/simulation/ezrassor_sim_description/urdf	1	vi	:vi ezrassor.gazebo
+pane	1	0	:bash	1	:*	1	:/home/francis/EZ-RASSOR/packages/autonomy/ezrassor_autonomous_control/source/ezrassor_autonomous_control	0	bash	:
+pane	1	0	:bash	1	:*	2	:/home/francis/EZ-RASSOR	0	bash	:
+window	1	0	1	:*	4861,282x78,0,0{93x78,0,0,1,93x78,94,0,2,94x78,188,0,3}
+state	1	

@@ -1,0 +1,5 @@
+pane	1	0	:python	1	:*	0	:/home/francis/RASSOR_Arduino	1	bash	:
+pane	1	0	:python	1	:*	1	:/home/francis/Downloads	0	bash	:
+pane	1	0	:python	1	:*	2	:/home/francis	0	bash	:
+window	1	0	1	:*	f2ca,80x24,0,0{35x24,0,0,1,44x24,36,0[44x20,36,0,2,44x3,36,21,3]}
+state		

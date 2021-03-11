@@ -1,0 +1,6 @@
+pane	1	0	:bash	1	:*M	0	:/opt/ros/melodic/share/realsense2_camera/launch	1	bash	:-bash
+pane	1	0	:bash	1	:*M	1	:/usr/share	0	bash	:
+pane	1	0	:bash	1	:*M	2	:/home/francis	0	bash	:
+pane	1	0	:bash	1	:*M	3	:/home/francis	0	bash	:
+window	1	0	1	:*M	5483,282x78,0,0{93x78,0,0,1,93x78,94,0,2,94x78,188,0[94x39,188,0,3,94x38,188,40,4]}
+state	1	

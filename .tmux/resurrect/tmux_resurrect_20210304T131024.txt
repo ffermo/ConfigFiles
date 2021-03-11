@@ -1,0 +1,5 @@
+pane	1	0	:bash	1	:*M	0	:/home/francis/RASSOR_Arduino	0	python	:/usr/bin/python /opt/ros/melodic/bin/roslaunch ezrassor_launcher configurable_simulation.launch control_methods:=autonomy keyboard robot_count:=1 spawn_x_coords:=0 spawn_y_coords:=0 digsite_x_coords:=5 digsite_y_coords:=5
+pane	1	0	:bash	1	:*M	1	:/home/francis/RASSOR_Arduino	1	bash	:
+pane	1	0	:bash	1	:*M	2	:/home/francis	0	bash	:
+window	1	0	1	:*M	2817,137x76,0,0[137x38,0,0,0,137x37,0,39{68x37,0,39,1,68x37,69,39,2}]
+state	1	

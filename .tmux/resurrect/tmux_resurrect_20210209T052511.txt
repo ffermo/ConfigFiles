@@ -1,0 +1,7 @@
+pane	1	0	:bash	1	:*M	0	:/home/francis/RASSOR\ Arduino	0	vi	:vi ezrassor_twist_stepper.ino
+pane	1	0	:bash	1	:*M	1	:/home/francis/RASSOR\ Arduino	0	bash	:
+pane	1	0	:bash	1	:*M	2	:/home/francis	0	bash	:
+pane	1	0	:bash	1	:*M	3	:/home/francis	0	rs-server	:rs-server
+pane	1	0	:bash	1	:*M	4	:/etc	1	bash	:
+window	1	0	1	:*M	6650,282x78,0,0{139x78,0,0,1,142x78,140,0[142x16,140,0,2,142x16,140,17,3,142x25,140,34,4,142x18,140,60,5]}
+state		

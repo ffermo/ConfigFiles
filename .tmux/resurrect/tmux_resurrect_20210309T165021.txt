@@ -1,0 +1,5 @@
+pane	1	0	:python	1	:*	0	:/home/francis/RASSOR_Arduino	1	bash	:
+pane	1	0	:python	1	:*	1	:/home/francis/Downloads	0	bash	:
+pane	1	0	:python	1	:*	2	:/home/francis	0	bash	:
+window	1	0	1	:*	cac9,282x78,0,0{136x78,0,0,1,145x78,137,0[145x47,137,0,2,145x30,137,48,3]}
+state	1	

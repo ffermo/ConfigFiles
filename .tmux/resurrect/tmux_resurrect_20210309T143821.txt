@@ -1,0 +1,5 @@
+pane	1	0	:python	1	:*	0	:/opt/ros/melodic/share/realsense2_camera/launch	1	vi	:vi ezrassor_realsense.launch
+pane	1	0	:python	1	:*	1	:/home/francis/Downloads	0	bash	:
+pane	1	0	:python	1	:*	2	:/home/francis	0	bash	:
+window	1	0	1	:*	c239,282x78,0,0{136x78,0,0,1,145x78,137,0[145x52,137,0,2,145x25,137,53,4]}
+state	1	

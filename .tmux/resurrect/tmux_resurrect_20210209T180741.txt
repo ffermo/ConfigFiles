@@ -1,0 +1,7 @@
+pane	1	0	:bash	1	:*M	0	:/home/francis	1	python2	:/usr/bin/python2 /opt/ros/melodic/bin/rostopic echo /camera/depth/camera_info
+pane	1	0	:bash	1	:*M	1	:/home/francis/RASSOR\ Arduino	0	python	:/usr/bin/python /opt/ros/melodic/bin/roslaunch realsense2_camera rs_camera.launch
+pane	1	0	:bash	1	:*M	2	:/home/francis	0	python	:/usr/bin/python /opt/ros/melodic/bin/roslaunch ezrassor_launcher configurable_communication.launch control_methods:=autonomy
+pane	1	0	:bash	1	:*M	3	:/home/francis	0	python2	:/usr/bin/python2 /opt/ros/melodic/bin/rostopic echo /depth/camera_info
+pane	1	0	:bash	1	:*M	4	:/etc	0	rs-server	:rs-server
+window	1	0	1	:*M	4741,282x78,0,0{140x78,0,0,1,141x78,141,0[141x18,141,0,2,141x18,141,19,3,141x18,141,38,4,141x21,141,57,5]}
+state	1	
