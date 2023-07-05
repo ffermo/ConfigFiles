@@ -95,10 +95,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Source ROS environment variables at launch if installed on system.
-if [ -d "/opt/ros/melodic/" ]; then
-	source /opt/ros/melodic/setup.bash
-fi
 
 # Checks to see if in Windows environment (WSL).
 if grep -q icrosoft /proc/version; then
@@ -107,10 +103,8 @@ if grep -q icrosoft /proc/version; then
 	export LS_COLORS="di=1;31:ex=1;37:tw=30;41:ow=1;37;41"
 	export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
 
-	source /opt/ros/melodic/setup.bash
 
-	# Source the ROS setup file for the EZRASSOR.
-	source "/home/francis/ezrassor_ws/devel/setup.bash"
+
 	
 	# WSL aliases for quick nav.
 	alias UCF='cd /mnt/f/Documents/UCF'
@@ -126,7 +120,12 @@ else
 	alias UCF='cd /home/francis/Francis/Documents/UCF'
 fi
 
+# Source ROS environment variables at launch if installed on system.
+if [ -d "/opt/ros/melodic/" ]; then
+	source /opt/ros/melodic/setup.bash
+fi
+
 # Source the ROS setup file for the EZRASSOR, if it exists.
 if [ -f "/home/francis/ezrassor_ws/devel/setup.bash" ]; then
-  . "/home/francis/ezrassor_ws/devel/setup.bash"
+	. "/home/francis/ezrassor_ws/devel/setup.bash"
 fi
