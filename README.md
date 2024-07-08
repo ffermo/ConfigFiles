@@ -1,2 +1,2 @@
 # ConfigFiles
-Configuration files for VIM, Tmux, and Bash.
+Personal configuration files for VIM, Tmux, and Bash.
